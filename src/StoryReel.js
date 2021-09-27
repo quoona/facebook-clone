@@ -10,22 +10,22 @@ function StoryReel() {
         title="Quoona"
       />
       <Story
-        image="./images/cat.jpg"
+        image="./images/cheems_3.jpg"
         profileSrc="./images/cat_2.jpg"
         title="Cat"
       />
       <Story
-        image="./images/cat.jpg"
+        image="./images/way.jpg"
         profileSrc="./images/cheems_2.jpg"
         title="Cheems"
       />
       <Story
-        image="./images/cat.jpg"
+        image="./images/cheems_2.jpg"
         profileSrc="./images/cheems.jpg"
         title="Joker"
       />
       <Story
-        image="./images/cat.jpg"
+        image="./images/cheems.jpg"
         profileSrc="./images/cheems_3.jpg"
         title="Girl"
       />
