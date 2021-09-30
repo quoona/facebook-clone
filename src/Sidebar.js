@@ -6,12 +6,14 @@ import OndemandVideoRoundedIcon from "@mui/icons-material/OndemandVideoRounded";
 import LocalConvenienceStoreRoundedIcon from "@mui/icons-material/LocalConvenienceStoreRounded";
 import ChatRoundedIcon from "@mui/icons-material/ChatRounded";
 import FlagRoundedIcon from "@mui/icons-material/FlagRounded";
+import { useStateValue } from "./StateProvider";
 import EmojiPeopleRoundedIcon from "@mui/icons-material/EmojiPeopleRounded";
 import LocalHospitalRoundedIcon from "@mui/icons-material/LocalHospitalRounded";
 function Sidebar({ title }) {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="sidebar">
-      <SidebarRow src="./images/cat.jpg" title="Quoonaa" />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalRoundedIcon}
         title="Covid Information Center"

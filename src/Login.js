@@ -3,13 +3,23 @@ import { Button } from "@mui/material";
 import React from "react";
 import "./Login.css";
 import { auth, provider } from "./firebase";
+import { useStateValue } from "./StateProvider";
+import { actionType } from "./reducer";
 function Login() {
+  const [state, dispatch] = useStateValue();
+
   const HandleSignin = () => {
     //sign in stuff
     auth
       .signInWithPopup(provider)
       .then((result) => {
-        console.log(result);
+        //dispatch from usereducer
+        dispatch({
+          //set type is SET_USER and then pass result to user
+          //push in datalayer
+          type: actionType.SET_USER,
+          user: result.user,
+        });
       })
       .catch((error) => {
         console.log(error);

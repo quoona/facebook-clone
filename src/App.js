@@ -5,10 +5,11 @@ import Sidebar from "./Sidebar";
 import Feed from "./Feed";
 import Widgets from "./Widgets";
 import Login from "./Login";
+import { useStateValue } from "./StateProvider";
 
 function App() {
   // const user = "quoonaa";
-  const user = null;
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="app">
       {!user ? (
@@ -16,18 +17,16 @@ function App() {
       ) : (
         <>
           <Header />
-          {/* Appbody */}
+
           <div className="app_body">
-            {/* SideBar */}
             <Sidebar />
-            {/* Feed */}
+
             <Feed />
-            {/* Widget */}
+
             <Widgets />
           </div>
         </>
       )}
-      {/* Header */}
     </div>
   );
 }
