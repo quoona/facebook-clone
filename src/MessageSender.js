@@ -4,6 +4,8 @@ import VideocamIcon from "@mui/icons-material/Videocam";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
 import MoodIcon from "@mui/icons-material/Mood";
 import { useStateValue } from "./StateProvider";
+import db from "./firebase";
+import firebase from "firebase";
 import "./MessageSender.css";
 function MessageSender() {
   const [input, setInput] = useState("");
@@ -13,6 +15,14 @@ function MessageSender() {
     e.preventDefault();
 
     //some clever db stuff
+    db.collection("posts").add({
+      message: input,
+      //render timestamp base on their machine
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      profilePic: user.photoURL,
+      username: user.displayName,
+      image: imageUrl,
+    });
     setInput("");
     setimageUrl("");
   };

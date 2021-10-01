@@ -5,16 +5,17 @@ import SearchIcon from "@mui/icons-material/Search";
 import HomeIcon from "@mui/icons-material/Home";
 import FlagIcon from "@mui/icons-material/Flag";
 import DirectionsSubwayOutlinedIcon from "@mui/icons-material/DirectionsSubwayOutlined";
-
+import Navbar from "./Navbar";
+import NavItem from "./NavItem";
+import DropdownMenu from "./DropdownMenu";
 import StorefrontIcon from "@mui/icons-material/Storefront";
-import { Avatar, IconButton } from "@mui/material";
-import AddIcon from "@mui/icons-material/Add";
-import ForumIcon from "@mui/icons-material/Forum";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
+import { Avatar } from "@mui/material";
+import { ReactComponent as BellIcon } from "./icons/bell.svg";
+import { ReactComponent as MessengerIcon } from "./icons/messenger.svg";
+import { ReactComponent as CaretIcon } from "./icons/caret.svg";
+import { ReactComponent as PlusIcon } from "./icons/plus.svg";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 import { useStateValue } from "./StateProvider";
-import reducer from "./reducer";
 function Header() {
   const [{ user }, dispatch] = useStateValue();
 
@@ -53,7 +54,7 @@ function Header() {
           <h4>{user.displayName}</h4>
         </div>
 
-        <IconButton>
+        {/* <IconButton>
           <AddIcon />
         </IconButton>
 
@@ -67,7 +68,16 @@ function Header() {
 
         <IconButton>
           <ExpandMoreIcon />
-        </IconButton>
+        </IconButton> */}
+        <Navbar>
+          <NavItem icon={<PlusIcon />} />
+          <NavItem icon={<BellIcon />} />
+          <NavItem icon={<MessengerIcon />} />
+
+          <NavItem icon={<CaretIcon />}>
+            <DropdownMenu></DropdownMenu>
+          </NavItem>
+        </Navbar>
       </div>
     </div>
   );
