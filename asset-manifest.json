@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/facebook-clone/static/css/main.5327bde8.chunk.css",
+    "main.js": "/facebook-clone/static/js/main.fb842402.chunk.js",
+    "main.js.map": "/facebook-clone/static/js/main.fb842402.chunk.js.map",
+    "runtime-main.js": "/facebook-clone/static/js/runtime-main.86765056.js",
+    "runtime-main.js.map": "/facebook-clone/static/js/runtime-main.86765056.js.map",
+    "static/js/2.e2412ebd.chunk.js": "/facebook-clone/static/js/2.e2412ebd.chunk.js",
+    "static/js/2.e2412ebd.chunk.js.map": "/facebook-clone/static/js/2.e2412ebd.chunk.js.map",
+    "static/js/3.547d9a91.chunk.js": "/facebook-clone/static/js/3.547d9a91.chunk.js",
+    "static/js/3.547d9a91.chunk.js.map": "/facebook-clone/static/js/3.547d9a91.chunk.js.map",
+    "index.html": "/facebook-clone/index.html",
+    "static/css/main.5327bde8.chunk.css.map": "/facebook-clone/static/css/main.5327bde8.chunk.css.map",
+    "static/js/2.e2412ebd.chunk.js.LICENSE.txt": "/facebook-clone/static/js/2.e2412ebd.chunk.js.LICENSE.txt",
+    "static/media/bell.3f26bc32.svg": "/facebook-clone/static/media/bell.3f26bc32.svg",
+    "static/media/bolt.bbfd3d7a.svg": "/facebook-clone/static/media/bolt.bbfd3d7a.svg",
+    "static/media/caret.5e005f3e.svg": "/facebook-clone/static/media/caret.5e005f3e.svg",
+    "static/media/chevron.52254b8e.svg": "/facebook-clone/static/media/chevron.52254b8e.svg",
+    "static/media/cog.8c5b9138.svg": "/facebook-clone/static/media/cog.8c5b9138.svg",
+    "static/media/messenger.2f80de94.svg": "/facebook-clone/static/media/messenger.2f80de94.svg",
+    "static/media/plus.12fd51ec.svg": "/facebook-clone/static/media/plus.12fd51ec.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86765056.js",
+    "static/js/2.e2412ebd.chunk.js",
+    "static/css/main.5327bde8.chunk.css",
+    "static/js/main.fb842402.chunk.js"
+  ]
+}
